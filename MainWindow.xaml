@@ -1,0 +1,29 @@
+﻿<Window x:Class="GROS_CTRL_F.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GROS_CTRL_F"
+        mc:Ignorable="d"
+        Title="Recherche de Fichiers" Height="231" Width="456">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Sélectionner un dossier :" Grid.Row="0"/>
+        <TextBox x:Name="FolderPathTextBox" Grid.Row="1"/>
+
+        <Button Content="Parcourir" Click="BrowseButton_Click" Grid.Row="1"
+                HorizontalAlignment="Right" Width="80"/>
+
+        <Label Content="Mot-clé :" Grid.Row="2" Margin="0,10,0,0"/>
+        <TextBox x:Name="KeywordTextBox" Grid.Row="3"/>
+
+        <Button Content="Rechercher" Click="SearchButton_Click" Grid.Row="3"
+                HorizontalAlignment="Right" Width="80"/>
+    </Grid>
+</Window>
